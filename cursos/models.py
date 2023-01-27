@@ -3,7 +3,7 @@ from django.db import models
 
 class Base(models.Model):
     criacao = models.DateTimeField(auto_now_add=True)
-    atualizacao = models.DateTimeField(auto_now_add=True)
+    atualizacao = models.DateTimeField(auto_now=True)
     ativo = models.BooleanField(default=True)
 
     class Meta:
@@ -11,6 +11,7 @@ class Base(models.Model):
 
 
 class Curso(Base):
+    objects = None
     titulo = models.CharField(max_length=225)
     url = models.URLField(unique=True)
 
@@ -23,6 +24,8 @@ class Curso(Base):
 
 
 class Avaliacao(Base):
+
+    objects = None
     curso = models.ForeignKey(Curso, related_name='avaliacoes', on_delete=models.CASCADE)
     nome = models.CharField(max_length=255)
     email = models.EmailField()
