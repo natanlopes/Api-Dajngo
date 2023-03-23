@@ -7,8 +7,8 @@ from .views import( CursoAPIView,
                     CursoViewsSet,
                     AvaliacaoViewsSet)
 router = SimpleRouter()
-router.register('curso',CursoViewsSet)
-router.register('avaliacoes',CursoViewsSet)
+router.register('cursos',CursoViewsSet)
+router.register('avaliacoes',AvaliacaoViewsSet)
 
 urlpatterns = [
     path('curso/', CursosAPIView.as_view(), name='cursos'),
