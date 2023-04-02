@@ -21,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-3y%$4qoop#x*-lyk+7i8yal4z46j4e2gk)(c0p0u&f-4mlz5*t'
-
+#9e67b96be3e0f3054c9b17e48e5525819fb97318 token
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -40,6 +40,7 @@ INSTALLED_APPS = [
      #biblioteca
     'django_filters',
     'rest_framework',
+    'rest_framework.authtoken',
 
      #aplicacoes
     'cursos',
@@ -136,7 +137,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media ')
 REST_FRAMEWORK = {
 
     'DEFAULT_AUTHENTICATION_CLASSES': (
-        'rest_framework.authentication.SessionAuthentication',
+        #'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.TokenAuthentication',
     ),
     'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.IsAuthenticatedOrReadOnly',
