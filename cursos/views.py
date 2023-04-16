@@ -6,6 +6,9 @@ from .serializers import   CursoSerializer,AvaliacaoSerializer
 from rest_framework import viewsets
 from rest_framework.decorators import action
 from rest_framework.response import Response
+from rest_framework import permissions
+from rest_framework import mixins
+from.permissions import EhSuperUser
 """
 AP1 V1
 """
@@ -39,6 +42,9 @@ class AvaliacaoAPIView (generics.RetrieveUpdateDestroyAPIView):
 AP1 V2
 """
 class CursoViewsSet(viewsets.ModelViewSet):
+    permission_classes = (
+        EhSuperUser,
+        permissions.DjangoModelPermissions,)
     queryset = Curso.objects.all()
     serializer_class = CursoSerializer
 
