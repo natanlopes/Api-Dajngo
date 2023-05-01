@@ -8,8 +8,8 @@ url_base_avaliacoes = 'http://127.0.0.1:8000/api/v2/avaliacoes/'
 
 
 novo_curso ={
-    "titulo": "AWS na pratica",
-    "url": "https://www.udemy.com/course/aws-na-pratica/"
+    "titulo": "git2",
+    "url": "https://github.com/natanlopes/CursoPythonluizotavio2"
            }
 # Verifica se o curso já existe antes de criar um novo
 resultado = requests.get(url=f'{url_base_cursos}?search={novo_curso["titulo"]}', headers=headers)
