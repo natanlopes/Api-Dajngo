@@ -18,8 +18,8 @@ O objetivo deste projeto é ensinar desde os conceitos básicos envolvidos em ap
 
 
 
-**API**  
--(Application Programming Interface) é um conjunto de protocolos e padrões de programação que permitem a comunicação entre diferentes aplicações .
+**API**: 
+> (Application Programming Interface) é um conjunto de protocolos e padrões de programação que permitem a comunicação entre diferentes aplicações .
 
 O que é REST?
 REST (Representational State Transfer) é um estilo arquitetural de software para sistemas distribuídos, como a World Wide Web. Ele se baseia no protocolo HTTP e utiliza seus métodos (GET, POST, PUT e DELETE) para criar serviços web.
