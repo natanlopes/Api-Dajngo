@@ -5,7 +5,7 @@ O objetivo deste projeto é ensinar desde os conceitos básicos envolvidos em ap
 
 
 
-Conteúdo
+-**Conteúdo**:
 O que são APIs?
 O que é REST?
 O que é o Django REST Framework?
