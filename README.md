@@ -6,15 +6,15 @@ O objetivo deste projeto é ensinar desde os conceitos básicos envolvidos em ap
 
 
 -**Conteúdo**:
-O que são APIs?
-O que é REST?
-O que é o Django REST Framework?
-Métodos HTTP suportados
-Recursos de segurança
-Testando as APIs
-Como executar o projeto
-Contribuição
-O que são APIs?
+- O que são APIs?
+- O que é REST?
+- O que é o Django REST Framework?
+- Métodos HTTP suportados
+- Recursos de segurança
+- Testando as APIs
+- Como executar o projeto
+- Contribuição
+- O que são APIs?
 
 
 
